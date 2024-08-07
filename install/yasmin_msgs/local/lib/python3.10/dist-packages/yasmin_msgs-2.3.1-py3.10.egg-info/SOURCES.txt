@@ -1,0 +1,6 @@
+setup.py
+yasmin_msgs/__init__.py
+yasmin_msgs.egg-info/PKG-INFO
+yasmin_msgs.egg-info/SOURCES.txt
+yasmin_msgs.egg-info/dependency_links.txt
+yasmin_msgs.egg-info/top_level.txt
