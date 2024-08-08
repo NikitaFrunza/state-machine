@@ -1,0 +1,27 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "${default}",
+        "limitSymbolsToIncludedHeaders": false
+      },
+      "includePath": [
+        "/home/rosbuntu/Desktop/state_machine_ws/install/yasmin_viewer/include/**",
+        "/home/rosbuntu/Desktop/state_machine_ws/install/yasmin_ros/include/**",
+        "/home/rosbuntu/Desktop/state_machine_ws/install/yasmin_msgs/include/**",
+        "/home/rosbuntu/Desktop/state_machine_ws/install/yasmin/include/**",
+        "/opt/ros/humble/include/**",
+        "/home/rosbuntu/Desktop/state_machine_ws/src/yasmin/yasmin/include/**",
+        "/home/rosbuntu/Desktop/state_machine_ws/src/yasmin/yasmin_ros/include/**",
+        "/home/rosbuntu/Desktop/state_machine_ws/src/yasmin/yasmin_viewer/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS",
+      "intelliSenseMode": "gcc-x64",
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "gnu11",
+      "cppStandard": "c++14"
+    }
+  ],
+  "version": 4
+}

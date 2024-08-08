@@ -1,0 +1,22 @@
+{
+    "python.autoComplete.extraPaths": [
+        "/home/rosbuntu/Desktop/state_machine_ws/install/yasmin_demos/local/lib/python3.10/dist-packages",
+        "/home/rosbuntu/Desktop/state_machine_ws/install/yasmin_viewer/local/lib/python3.10/dist-packages",
+        "/home/rosbuntu/Desktop/state_machine_ws/install/yasmin_ros/local/lib/python3.10/dist-packages",
+        "/home/rosbuntu/Desktop/state_machine_ws/install/yasmin_msgs/local/lib/python3.10/dist-packages",
+        "/home/rosbuntu/Desktop/state_machine_ws/install/yasmin/local/lib/python3.10/dist-packages",
+        "/home/rosbuntu/Desktop/state_machine_ws/install/state_machine/lib/python3.10/site-packages",
+        "/opt/ros/humble/lib/python3.10/site-packages",
+        "/opt/ros/humble/local/lib/python3.10/dist-packages"
+    ],
+    "python.analysis.extraPaths": [
+        "/home/rosbuntu/Desktop/state_machine_ws/install/yasmin_demos/local/lib/python3.10/dist-packages",
+        "/home/rosbuntu/Desktop/state_machine_ws/install/yasmin_viewer/local/lib/python3.10/dist-packages",
+        "/home/rosbuntu/Desktop/state_machine_ws/install/yasmin_ros/local/lib/python3.10/dist-packages",
+        "/home/rosbuntu/Desktop/state_machine_ws/install/yasmin_msgs/local/lib/python3.10/dist-packages",
+        "/home/rosbuntu/Desktop/state_machine_ws/install/yasmin/local/lib/python3.10/dist-packages",
+        "/home/rosbuntu/Desktop/state_machine_ws/install/state_machine/lib/python3.10/site-packages",
+        "/opt/ros/humble/lib/python3.10/site-packages",
+        "/opt/ros/humble/local/lib/python3.10/dist-packages"
+    ]
+}

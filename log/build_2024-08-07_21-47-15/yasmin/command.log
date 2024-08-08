@@ -1,6 +1,0 @@
-Invoking command in '/home/rosbuntu/Desktop/state_machine_ws/build/yasmin': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/rosbuntu/Desktop/state_machine_ws/src/yasmin/yasmin -DCMAKE_INSTALL_PREFIX=/home/rosbuntu/Desktop/state_machine_ws/install/yasmin
-Invoked command in '/home/rosbuntu/Desktop/state_machine_ws/build/yasmin' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/rosbuntu/Desktop/state_machine_ws/src/yasmin/yasmin -DCMAKE_INSTALL_PREFIX=/home/rosbuntu/Desktop/state_machine_ws/install/yasmin
-Invoking command in '/home/rosbuntu/Desktop/state_machine_ws/build/yasmin': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/rosbuntu/Desktop/state_machine_ws/build/yasmin -- -j4 -l4
-Invoked command in '/home/rosbuntu/Desktop/state_machine_ws/build/yasmin' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/rosbuntu/Desktop/state_machine_ws/build/yasmin -- -j4 -l4
-Invoking command in '/home/rosbuntu/Desktop/state_machine_ws/build/yasmin': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/rosbuntu/Desktop/state_machine_ws/build/yasmin
-Invoked command in '/home/rosbuntu/Desktop/state_machine_ws/build/yasmin' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/rosbuntu/Desktop/state_machine_ws/build/yasmin

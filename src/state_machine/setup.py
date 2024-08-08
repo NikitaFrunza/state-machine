@@ -20,6 +20,7 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
+            "sm_node = state_machine.sm_node_main:main"
         ],
     },
 )

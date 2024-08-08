@@ -1,8 +1,0 @@
-{
-  "package_name": "yasmin_msgs",
-  "non_idl_tuples": [
-    "/home/rosbuntu/Desktop/state_machine_ws/src/yasmin/yasmin_msgs:msg/State.msg",
-    "/home/rosbuntu/Desktop/state_machine_ws/src/yasmin/yasmin_msgs:msg/Transition.msg",
-    "/home/rosbuntu/Desktop/state_machine_ws/src/yasmin/yasmin_msgs:msg/StateMachine.msg"
-  ]
-}
