@@ -20,7 +20,8 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            "sm_node = state_machine.sm_node_main:main"
+            "sm_node = state_machine.sm_node_main:main",
+            "test_bb = state_machine.bb_test2:main"
         ],
     },
 )
