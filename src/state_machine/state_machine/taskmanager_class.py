@@ -6,10 +6,13 @@ from yasmin import StateMachine
 # from yasmin_viewer import YasminViewerPub
 
 from .blackboard_class import shared_blackboard
+from .bb_test import bb
 
 class TaskManager(State):
     def __init__(self) -> None:
         super().__init__(["taskmanager_go_to_navigation", "taskmanager_go_to_moveArm", "taskmanager_go_to_visualAnalysis"])
+
+        print(bb.init_state)
 
         self.tasks = ["navigation", "visual_analysis", "move_arm"]
         self.next_task_index = 0

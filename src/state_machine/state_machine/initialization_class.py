@@ -8,6 +8,7 @@ from yasmin import StateMachine
 from .rosbag_parser_class import RosbagParser
 from .blackboard_class import shared_blackboard
 
+from .bb_test import bb
 #add a function which can use the dictionary to find the needed workstation (ex. WS01) and add to it to it the location on the map
 #as a nre, separate array object for that workstation so would be like 
 # 'WS03': [{'object': 17, 'target': 0, 'object_type': 'M30', 'location': (1.36, -2.08, 0.0, 1.80)
@@ -15,7 +16,9 @@ from .blackboard_class import shared_blackboard
 class Initialization(State):
     def __init__(self) -> None:
         super().__init__(["go_to_taskManager"])
-
+        bb.init_state = "coming from init state"
+        print(bb.counter)
+        # print(bb.object_placed)
         self.arena_array = []
 
         self.ws_pose_dict = {
@@ -126,16 +129,16 @@ class Initialization(State):
         print("Executing state Initialization\n")
         # self.init_queue()
 
-        while(shared_blackboard.input_string == ""):
-            print("waiting for string")
-            time.sleep(0.1)
+        # while(shared_blackboard.input_string == ""):
+        #     print("waiting for string")
+        #     time.sleep(0.1)
 
-        parser = RosbagParser(shared_blackboard.input_string)
-        self.arena_array = parser.parse_tasks()
-        self.update_ws_poses()
-        shared_blackboard.environment_data_array = self.arena_array
-        print(shared_blackboard.environment_data_array)
-        self.init_queue()
+        # parser = RosbagParser(shared_blackboard.input_string)
+        # self.arena_array = parser.parse_tasks()
+        # self.update_ws_poses()
+        # shared_blackboard.environment_data_array = self.arena_array
+        # print(shared_blackboard.environment_data_array)
+        # self.init_queue()
         # print(shared_blackboard.environment_data_array)
 
         # time.sleep(3)
