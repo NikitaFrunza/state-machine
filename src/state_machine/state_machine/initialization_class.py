@@ -8,19 +8,18 @@ from yasmin import StateMachine
 from .rosbag_parser_class import RosbagParser
 from .blackboard_class import shared_blackboard
 
-from .bb_test import bb
 #add a function which can use the dictionary to find the needed workstation (ex. WS01) and add to it to it the location on the map
 #as a nre, separate array object for that workstation so would be like 
 # 'WS03': [{'object': 17, 'target': 0, 'object_type': 'M30', 'location': (1.36, -2.08, 0.0, 1.80)
-
+from .a_blackboard import my_blackboard
 class Initialization(State):
     def __init__(self) -> None:
         super().__init__(["go_to_taskManager"])
-        bb.init_state = "coming from init state"
-        print(bb.counter)
-        # print(bb.object_placed)
+        
         self.arena_array = []
 
+        my_blackboard.__setitem__("object_nr", 500)
+        
         self.ws_pose_dict = {
             'WS01': {
                     'position': {'x': 1.9244441986, 'y': 4.92034030, 'z': 0.0},
@@ -97,10 +96,6 @@ class Initialization(State):
         }
 
     def init_queue(self):
-        # shared_blackboard.places.append((1.047, -0.01, 0.0, 2.988))
-        # shared_blackboard.places.append((-1.776, -0.757, 0.0, -2.334))
-        # shared_blackboard.places.append((-0.96, -0.51, 0.0, 1.80))
-        # shared_blackboard.places.append((-0.11, -1.83, 0.0, 1.80))
         locations_pickup = self.arena_array[0]["arena_start_state"]
         locations_place = self.arena_array[0]["arena_target_state"]
 
