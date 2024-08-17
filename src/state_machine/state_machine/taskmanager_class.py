@@ -7,12 +7,12 @@ from yasmin import StateMachine
 
 from .blackboard_class import shared_blackboard
 
-from .a_blackboard import my_blackboard
+# from .a_blackboard import my_blackboard
 class TaskManager(State):
     def __init__(self) -> None:
         super().__init__(["taskmanager_go_to_navigation", "taskmanager_go_to_moveArm", "taskmanager_go_to_visualAnalysis"])
         # my_blackboard.__getitem__('object_nr')
-        print(my_blackboard.__getitem__('object_nr'))
+        # print(my_blackboard.__getitem__('object_nr'))
         self.tasks = ["navigation", "visual_analysis", "move_arm"]
         self.next_task_index = 0
         self.current_state_index = 0

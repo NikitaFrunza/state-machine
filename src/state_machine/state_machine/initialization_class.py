@@ -11,14 +11,14 @@ from .blackboard_class import shared_blackboard
 #add a function which can use the dictionary to find the needed workstation (ex. WS01) and add to it to it the location on the map
 #as a nre, separate array object for that workstation so would be like 
 # 'WS03': [{'object': 17, 'target': 0, 'object_type': 'M30', 'location': (1.36, -2.08, 0.0, 1.80)
-from .a_blackboard import my_blackboard
+# from .a_blackboard import my_blackboard
 class Initialization(State):
     def __init__(self) -> None:
         super().__init__(["go_to_taskManager"])
         
         self.arena_array = []
 
-        my_blackboard.__setitem__("object_nr", 500)
+        # my_blackboard.__setitem__("object_nr", 500)
         
         self.ws_pose_dict = {
             'WS01': {

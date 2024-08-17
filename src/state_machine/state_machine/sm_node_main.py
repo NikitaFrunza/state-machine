@@ -8,7 +8,7 @@ from std_msgs.msg import Bool, String, Int16
 
 from .blackboard_class import shared_blackboard
 from .navigationstate_class import NavigationClass
-from .initialization_class import Initialization
+from .a_initialization import Initialization
 from .taskmanager_class import TaskManager
 from .movearm_class import MoveArm
 from .visualproccessing_class import VisualAnalysis
